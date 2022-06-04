@@ -26,28 +26,15 @@ class NavDrawer extends StatelessWidget {
             ),
           ),
           ListTile(
-            leading: const Icon(Icons.input),
+            leading: const Icon(Icons.developer_board),
             title: const Text('OŞGELDİNEEEEZ'),
-            onTap: () => {},
+            onTap: () => {
+
+            },
           ),
           ListTile(
             leading: const Icon(Icons.verified_user),
             title: const Text('PROFİL'),
-            onTap: () => {Navigator.of(context).pop()},
-          ),
-          ListTile(
-            leading: const Icon(Icons.settings),
-            title: const Text('AYARLAR'),
-            onTap: () => {Navigator.of(context).pop()},
-          ),
-          ListTile(
-            leading: const Icon(Icons.border_color),
-            title: const Text('GERİ BİLDİRİM VER'),
-            onTap: () => {Navigator.of(context).pop()},
-          ),
-          ListTile(
-            leading: const Icon(Icons.exit_to_app),
-            title: const Text('ÇIKIŞ YAP'),
             onTap: () => {Navigator.of(context).pop()},
           ),
         ],

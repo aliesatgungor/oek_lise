@@ -1,29 +1,58 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_inappwebview/flutter_inappwebview.dart';
+import 'package:oek_lise/Pages/9.Sinif/9.sinif.dart';
 import 'package:oek_lise/widgets/sidebar.dart';
+import 'dart:async';
+import 'dart:io';
 
-void main() => runApp(MyApp());
+import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: MyHomePage(),
-    );
+
+Future main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  if (Platform.isAndroid) {
+    await AndroidInAppWebViewController.setWebContentsDebuggingEnabled(true);
   }
+
+  runApp(MaterialApp(
+      home: new MyApp()
+  ));
 }
 
-class MyHomePage extends StatelessWidget {
+class MyApp extends StatefulWidget {
+  @override
+  _MyAppState createState() => new _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NavDrawer(),
-      appBar: AppBar(
-        title: Text('Liseler İçin Online Eğitim Köprüsü'),
-      ),
-      body: Center(
-        child: Text('Online Eğitim Köprüsü'),
-      ),
+        appBar: AppBar(title: Text("Online Eğitim Köprüsü Lise")),
+        drawer: Drawer(
+          child: Column(
+            children: [
+              TextButton(onPressed: (){}, child: Text("sa"))
+            ],
+          ),
+        ),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+                ElevatedButton(
+                    onPressed: (){
+                      Navigator.of(context)
+                          .push(MaterialPageRoute(builder: (context) => Sinif9()));
+                    },
+                    child: Text("9.Sınıf"),
+                )
+            ],
+          ),
+        )
     );
   }
 }
