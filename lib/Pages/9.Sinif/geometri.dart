@@ -3,13 +3,13 @@ import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'dart:async';
 import 'dart:io';
 import 'package:oek_lise/main.dart';
-class Matematik9 extends StatefulWidget {
+class Geometri9 extends StatefulWidget {
 
-  Matematik9({Key? key}) : super(key: key);
+  Geometri9({Key? key}) : super(key: key);
   @override
-  _Matematik9State createState() => _Matematik9State();
+  _Geometri9State createState() => _Geometri9State();
 }
-class _Matematik9State extends State<Matematik9> {
+class _Geometri9State extends State<Geometri9> {
   final GlobalKey webViewKey = GlobalKey();
 
   InAppWebViewController? webViewController;
@@ -40,7 +40,7 @@ class _Matematik9State extends State<Matematik9> {
       body: InAppWebView(
         key: webViewKey,
         initialUrlRequest:
-        URLRequest(url: Uri.parse("https://www.dersizleyin.com/kategori/lise/9-sinif/matematik-9/")),
+        URLRequest(url: Uri.parse("https://www.dersizleyin.com/kategori/lise/9-sinif/geometri-9/")),
         initialOptions: options,
       ),
     );

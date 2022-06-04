@@ -7,7 +7,6 @@ import 'dart:io';
 
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 
-
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
@@ -15,9 +14,7 @@ Future main() async {
     await AndroidInAppWebViewController.setWebContentsDebuggingEnabled(true);
   }
 
-  runApp(MaterialApp(
-      home: new MyApp()
-  ));
+  runApp(MaterialApp(home: new MyApp()));
 }
 
 class MyApp extends StatefulWidget {
@@ -26,33 +23,45 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(title: Text("Online Eğitim Köprüsü Lise")),
-        drawer: Drawer(
-          child: Column(
-            children: [
-              TextButton(onPressed: (){}, child: Text("sa"))
-            ],
-          ),
-        ),
+        drawer: NavDrawer(),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-                ElevatedButton(
-                    onPressed: (){
-                      Navigator.of(context)
-                          .push(MaterialPageRoute(builder: (context) => Sinif9()));
-                    },
-                    child: Text("9.Sınıf"),
-                )
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) => Sinif9()));
+                },
+                child: Text("9.Sınıf"),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) => Sinif9()));
+                },
+                child: Text("10.Sınıf"),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) => Sinif9()));
+                },
+                child: Text("11.Sınıf"),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) => Sinif9()));
+                },
+                child: Text("12.Sınıf"),
+              )
             ],
           ),
-        )
-    );
+        ));
   }
 }
