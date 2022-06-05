@@ -34,12 +34,12 @@ class _Biyoloji9State extends State<Biyoloji9> {
   Widget build(BuildContext context) {
 
     return Scaffold(
-
-      body: InAppWebView(
+        body: InAppWebView(
         key: webViewKey,
         initialUrlRequest:
         URLRequest(url: Uri.parse("https://www.dersizleyin.com/kategori/lise/9-sinif/biyoloji-9/")),
         initialOptions: options,
+
       ),
     );
   }
