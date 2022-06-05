@@ -4,6 +4,7 @@ import 'package:oek_lise/widgets/sidebar.dart';
 import 'matematik.dart';
 import 'geometri.dart';
 import 'biyoloji.dart';
+import 'tarih.dart';
 
 class Sinif9 extends StatefulWidget {
   const Sinif9({Key? key}) : super(key: key);
@@ -50,13 +51,13 @@ class _Sinif9State extends State<Sinif9> {
               ElevatedButton(
                   onPressed: () {
                     Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context) => Fizik9()));
+                        MaterialPageRoute(builder: (context) => Tarih9()));
                   },
                   child: const Text("Coğrafya")),
               ElevatedButton(
                   onPressed: () {
                     Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context) => Fizik9()));
+                        MaterialPageRoute(builder: (context) => Tarih9()));
                   },
                   child: const Text("Tarih")),
             ],
