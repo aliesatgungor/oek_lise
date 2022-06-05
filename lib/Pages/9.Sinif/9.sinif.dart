@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:oek_lise/Pages/9.Sinif/biyolojitest.dart';
 import 'package:oek_lise/Pages/9.Sinif/cografya.dart';
 import 'package:oek_lise/Pages/9.Sinif/fizik.dart';
 import 'package:oek_lise/Pages/9.Sinif/kimyatest.dart';
@@ -123,7 +124,7 @@ class _Sinif9State extends State<Sinif9> {
                       ),
                       onPressed: () {
                         Navigator.of(context).push(
-                            MaterialPageRoute(builder: (context) => Biyoloji9()));
+                            MaterialPageRoute(builder: (context) => BiyolojiTest9()));
                       },
                       child: const Text("Biyoloji Test"))
                 ],
@@ -149,19 +150,34 @@ class _Sinif9State extends State<Sinif9> {
                         Navigator.of(context).push(
                             MaterialPageRoute(builder: (context) => Cografya9()));
                       },
-                      child: const Text("Coğrafya"))
+                      child: const Text("Coğrafya Test"))
                 ],
               ),
-              ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    surfaceTintColor: Color(0xFFFF7028),
-                    primary: Color(0xFFFF7028),
-                  ),
-                  onPressed: () {
-                    Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context) => Tarih9()));
-                  },
-                  child: const Text("Tarih")),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        surfaceTintColor: Color(0xFFFF7028),
+                        primary: Color(0xFFFF7028),
+                      ),
+                      onPressed: () {
+                        Navigator.of(context).push(
+                            MaterialPageRoute(builder: (context) => Tarih9()));
+                      },
+                      child: const Text("Tarih")),
+                  ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        surfaceTintColor: Color(0xFFFF7028),
+                        primary: Color(0xFFFF7028),
+                      ),
+                      onPressed: () {
+                        Navigator.of(context).push(
+                            MaterialPageRoute(builder: (context) => Tarih9()));
+                      },
+                      child: const Text("Tarih Test"))
+                ],
+              ),
             ],
           ),
         ));
