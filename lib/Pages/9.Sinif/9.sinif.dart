@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:oek_lise/Pages/9.Sinif/cografya.dart';
 import 'package:oek_lise/Pages/9.Sinif/fizik.dart';
 import 'package:oek_lise/Pages/9.Sinif/kimyatest.dart';
+import 'package:oek_lise/Pages/9.Sinif/matematiktest.dart';
 import 'package:oek_lise/widgets/sidebar.dart';
 import 'matematik.dart';
 import 'kimya.dart';
@@ -48,9 +49,9 @@ class _Sinif9State extends State<Sinif9> {
                       ),
                       onPressed: () {
                         Navigator.of(context).push(
-                            MaterialPageRoute(builder: (context) => Matematik9()));
+                            MaterialPageRoute(builder: (context) => MatematikTest9()));
                       },
-                      child: const Text("Matematik"))
+                      child: const Text("Matematik Test"))
                 ],
               ),
               Row(
@@ -78,36 +79,79 @@ class _Sinif9State extends State<Sinif9> {
                       child: const Text("Kimya Test"))
                 ],
               ),
-              ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    surfaceTintColor: Color(0xFFFF7028),
-                    primary: Color(0xFFFF7028),
-                  ),
-                  onPressed: () {
-                    Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context) => Fizik9()));
-                  },
-                  child: const Text("Fizik")),
-              ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    surfaceTintColor: Color(0xFFFF7028),
-                    primary: Color(0xFFFF7028),
-                  ),
-                  onPressed: () {
-                    Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context) => Biyoloji9()));
-                  },
-                  child: const Text("Biyoloji")),
-              ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    surfaceTintColor: Color(0xFFFF7028),
-                    primary: Color(0xFFFF7028),
-                  ),
-                  onPressed: () {
-                    Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context) => Cografya9()));
-                  },
-                  child: const Text("Coğrafya")),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        surfaceTintColor: Color(0xFFFF7028),
+                        primary: Color(0xFFFF7028),
+                      ),
+                      onPressed: () {
+                        Navigator.of(context).push(
+                            MaterialPageRoute(builder: (context) => Fizik9()));
+                      },
+                      child: const Text("Fizik")),
+                  ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        surfaceTintColor: Color(0xFFFF7028),
+                        primary: Color(0xFFFF7028),
+                      ),
+                      onPressed: () {
+                        Navigator.of(context).push(
+                            MaterialPageRoute(builder: (context) => Fizik9()));
+                      },
+                      child: const Text("Fizik Test"))
+                ],
+              ),
+              Row( mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        surfaceTintColor: Color(0xFFFF7028),
+                        primary: Color(0xFFFF7028),
+                      ),
+                      onPressed: () {
+                        Navigator.of(context).push(
+                            MaterialPageRoute(builder: (context) => Biyoloji9()));
+                      },
+                      child: const Text("Biyoloji")),
+                  ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        surfaceTintColor: Color(0xFFFF7028),
+                        primary: Color(0xFFFF7028),
+                      ),
+                      onPressed: () {
+                        Navigator.of(context).push(
+                            MaterialPageRoute(builder: (context) => Biyoloji9()));
+                      },
+                      child: const Text("Biyoloji Test"))
+                ],
+              ),
+              Row( mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        surfaceTintColor: Color(0xFFFF7028),
+                        primary: Color(0xFFFF7028),
+                      ),
+                      onPressed: () {
+                        Navigator.of(context).push(
+                            MaterialPageRoute(builder: (context) => Cografya9()));
+                      },
+                      child: const Text("Coğrafya")),
+                  ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        surfaceTintColor: Color(0xFFFF7028),
+                        primary: Color(0xFFFF7028),
+                      ),
+                      onPressed: () {
+                        Navigator.of(context).push(
+                            MaterialPageRoute(builder: (context) => Cografya9()));
+                      },
+                      child: const Text("Coğrafya"))
+                ],
+              ),
               ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     surfaceTintColor: Color(0xFFFF7028),
