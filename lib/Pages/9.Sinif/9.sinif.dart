@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:oek_lise/Pages/9.Sinif/biyolojitest.dart';
+import 'package:oek_lise/Pages/9.Sinif/cograftatest.dart';
 import 'package:oek_lise/Pages/9.Sinif/cografya.dart';
 import 'package:oek_lise/Pages/9.Sinif/fizik.dart';
+import 'package:oek_lise/Pages/9.Sinif/fiziktest.dart';
 import 'package:oek_lise/Pages/9.Sinif/kimyatest.dart';
 import 'package:oek_lise/Pages/9.Sinif/matematiktest.dart';
+import 'package:oek_lise/Pages/9.Sinif/tarihtest.dart';
 import 'package:oek_lise/widgets/sidebar.dart';
 import 'matematik.dart';
 import 'kimya.dart';
@@ -19,6 +22,8 @@ class Sinif9 extends StatefulWidget {
 class _Sinif9State extends State<Sinif9> {
   @override
   Widget build(BuildContext context) {
+    var height = MediaQuery.of(context).size.height;
+    var width = MediaQuery.of(context).size.width;
     return Scaffold(
         appBar: AppBar(
           title: const Text("9.Sınıf"),
@@ -37,20 +42,22 @@ class _Sinif9State extends State<Sinif9> {
                       style: ElevatedButton.styleFrom(
                         surfaceTintColor: Color(0xFFFF7028),
                         primary: Color(0xFFFF7028),
+                        minimumSize: Size(width * 0.35, height * 0.06)
                       ),
                       onPressed: () {
-                        Navigator.of(context).push(
-                            MaterialPageRoute(builder: (context) => Matematik9()));
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => Matematik9()));
                       },
                       child: const Text("Matematik")),
                   ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         surfaceTintColor: Color(0xFFFF7028),
                         primary: Color(0xFFFF7028),
+                          minimumSize: Size(width * 0.35, height * 0.06)
                       ),
                       onPressed: () {
-                        Navigator.of(context).push(
-                            MaterialPageRoute(builder: (context) => MatematikTest9()));
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => MatematikTest9()));
                       },
                       child: const Text("Matematik Test"))
                 ],
@@ -62,6 +69,7 @@ class _Sinif9State extends State<Sinif9> {
                       style: ElevatedButton.styleFrom(
                         surfaceTintColor: Color(0xFFFF7028),
                         primary: Color(0xFFFF7028),
+                          minimumSize: Size(width * 0.35, height * 0.06)
                       ),
                       onPressed: () {
                         Navigator.of(context).push(
@@ -72,6 +80,7 @@ class _Sinif9State extends State<Sinif9> {
                       style: ElevatedButton.styleFrom(
                         surfaceTintColor: Color(0xFFFF7028),
                         primary: Color(0xFFFF7028),
+                          minimumSize: Size(width * 0.35, height * 0.06)
                       ),
                       onPressed: () {
                         Navigator.of(context).push(MaterialPageRoute(
@@ -87,6 +96,7 @@ class _Sinif9State extends State<Sinif9> {
                       style: ElevatedButton.styleFrom(
                         surfaceTintColor: Color(0xFFFF7028),
                         primary: Color(0xFFFF7028),
+                          minimumSize: Size(width * 0.35, height * 0.06)
                       ),
                       onPressed: () {
                         Navigator.of(context).push(
@@ -97,58 +107,65 @@ class _Sinif9State extends State<Sinif9> {
                       style: ElevatedButton.styleFrom(
                         surfaceTintColor: Color(0xFFFF7028),
                         primary: Color(0xFFFF7028),
+                          minimumSize: Size(width * 0.35, height * 0.06)
                       ),
                       onPressed: () {
-                        Navigator.of(context).push(
-                            MaterialPageRoute(builder: (context) => Fizik9()));
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => FizikTest9()));
                       },
                       child: const Text("Fizik Test"))
                 ],
               ),
-              Row( mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         surfaceTintColor: Color(0xFFFF7028),
                         primary: Color(0xFFFF7028),
+                          minimumSize: Size(width * 0.35, height * 0.06)
                       ),
                       onPressed: () {
-                        Navigator.of(context).push(
-                            MaterialPageRoute(builder: (context) => Biyoloji9()));
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => Biyoloji9()));
                       },
                       child: const Text("Biyoloji")),
                   ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         surfaceTintColor: Color(0xFFFF7028),
                         primary: Color(0xFFFF7028),
+                          minimumSize: Size(width * 0.35, height * 0.06)
                       ),
                       onPressed: () {
-                        Navigator.of(context).push(
-                            MaterialPageRoute(builder: (context) => BiyolojiTest9()));
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => BiyolojiTest9()));
                       },
                       child: const Text("Biyoloji Test"))
                 ],
               ),
-              Row( mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         surfaceTintColor: Color(0xFFFF7028),
                         primary: Color(0xFFFF7028),
+                          minimumSize: Size(width * 0.35, height * 0.06)
                       ),
                       onPressed: () {
-                        Navigator.of(context).push(
-                            MaterialPageRoute(builder: (context) => Cografya9()));
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => Cografya9()));
                       },
                       child: const Text("Coğrafya")),
                   ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         surfaceTintColor: Color(0xFFFF7028),
                         primary: Color(0xFFFF7028),
+                          minimumSize: Size(width * 0.35, height * 0.06)
                       ),
                       onPressed: () {
-                        Navigator.of(context).push(
-                            MaterialPageRoute(builder: (context) => Cografya9()));
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => CografyaTest9()));
                       },
                       child: const Text("Coğrafya Test"))
                 ],
@@ -160,6 +177,7 @@ class _Sinif9State extends State<Sinif9> {
                       style: ElevatedButton.styleFrom(
                         surfaceTintColor: Color(0xFFFF7028),
                         primary: Color(0xFFFF7028),
+                          minimumSize: Size(width * 0.35, height * 0.06)
                       ),
                       onPressed: () {
                         Navigator.of(context).push(
@@ -170,10 +188,11 @@ class _Sinif9State extends State<Sinif9> {
                       style: ElevatedButton.styleFrom(
                         surfaceTintColor: Color(0xFFFF7028),
                         primary: Color(0xFFFF7028),
+                          minimumSize: Size(width * 0.35, height * 0.06)
                       ),
                       onPressed: () {
                         Navigator.of(context).push(
-                            MaterialPageRoute(builder: (context) => Tarih9()));
+                            MaterialPageRoute(builder: (context) => TarihTest9()));
                       },
                       child: const Text("Tarih Test"))
                 ],

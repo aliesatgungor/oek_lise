@@ -32,6 +32,7 @@ class _Biyoloji9State extends State<Biyoloji9> {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
 
       body: InAppWebView(
