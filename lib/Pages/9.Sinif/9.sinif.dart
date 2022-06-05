@@ -6,6 +6,7 @@ import 'dart:async';
 import 'dart:io';
 import 'matematik.dart';
 import 'geometri.dart';
+import 'biyoloji.dart';
 
 import 'package:oek_lise/main.dart';
 
@@ -36,18 +37,22 @@ class _Sinif9State extends State<Sinif9> {
               ElevatedButton(
                   onPressed: () {
                     Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context) => Geometri9()));
+                        MaterialPageRoute(builder: (context) => Kimya9()));
                   },
-                  child: Text("Geometri")),
+                  child: Text("Kimya")),
               ElevatedButton(
                   onPressed: () {
                     Navigator.of(context).push(
                         MaterialPageRoute(builder: (context) => Fizik9()));
                   },
-                  child: Text("Fizik"))
+                  child: Text("Fizik")),
+              ElevatedButton(
+                  onPressed: () {
+                    Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => Biyoloji9()));
+                  },
+                  child: Text("Biyoloji")),
             ],
-
-
           ),
         ));
   }
