@@ -3,13 +3,13 @@ import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'dart:async';
 import 'dart:io';
 import 'package:oek_lise/main.dart';
-class Tarih9 extends StatefulWidget {
+class KimyaTest9 extends StatefulWidget {
 
-  Tarih9({Key? key}) : super(key: key);
+  KimyaTest9({Key? key}) : super(key: key);
   @override
-  _Tarih9State createState() => _Tarih9State();
+  _KimyaTest9State createState() => _KimyaTest9State();
 }
-class _Tarih9State extends State<Tarih9> {
+class _KimyaTest9State extends State<KimyaTest9> {
   final GlobalKey webViewKey = GlobalKey();
 
   InAppWebViewController? webViewController;
@@ -40,7 +40,7 @@ class _Tarih9State extends State<Tarih9> {
       body: InAppWebView(
         key: webViewKey,
         initialUrlRequest:
-        URLRequest(url: Uri.parse("https://www.dersizleyin.com/kategori/lise/9-sinif/9-sinif-tarih/")),
+        URLRequest(url: Uri.parse("https://ogmmateryal.eba.gov.tr/soru-bankasi-kazanim/kimya?s=6&d=44&u=0&k=0")),
         initialOptions: options,
       ),
     );

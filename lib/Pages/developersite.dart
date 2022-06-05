@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
-import 'dart:async';
-import 'dart:io';
-import 'package:oek_lise/main.dart';
-class Tarih9 extends StatefulWidget {
+class Developer extends StatefulWidget {
 
-  Tarih9({Key? key}) : super(key: key);
+  Developer({Key? key}) : super(key: key);
   @override
-  _Tarih9State createState() => _Tarih9State();
+  _DeveloperState createState() => _DeveloperState();
 }
-class _Tarih9State extends State<Tarih9> {
+class _DeveloperState extends State<Developer> {
   final GlobalKey webViewKey = GlobalKey();
 
   InAppWebViewController? webViewController;
@@ -40,7 +37,7 @@ class _Tarih9State extends State<Tarih9> {
       body: InAppWebView(
         key: webViewKey,
         initialUrlRequest:
-        URLRequest(url: Uri.parse("https://www.dersizleyin.com/kategori/lise/9-sinif/9-sinif-tarih/")),
+        URLRequest(url: Uri.parse("https://aliesatgungor.com/")),
         initialOptions: options,
       ),
     );

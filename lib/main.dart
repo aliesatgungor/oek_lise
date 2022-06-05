@@ -23,16 +23,43 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+
   @override
   Widget build(BuildContext context) {
+    var height = MediaQuery.of(context).size.height;
+    var width = MediaQuery.of(context).size.width;
+
     return Scaffold(
-        appBar: AppBar(title: Text("Online Eğitim Köprüsü Lise")),
+        backgroundColor: Color(0xFF2f2f2f),
+        appBar: AppBar(
+            title: Text("Online Eğitim Köprüsü Lise"),
+            backgroundColor: Color(0xFFFF7028),
+        ),
         drawer: NavDrawer(),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
+              Container(
+                height: height*0.40,
+                width: width*1,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: NetworkImage("https://lh6.googleusercontent.com/94UsaKS8oqiwlAAu0MGzucO_ITmhNRfKPFx-9coBwHxmqPZflgJOVTsHxxSfcLXp4Bk0ETMen6VxdzFTZgaRji6dlWSejCL-4lvlyZyLJqdbZPZG"),
+                    fit: BoxFit.fill
+                  ),
+                ),
+              ),
+
               ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  surfaceTintColor: Color(0xFFFF7028),
+                  primary: Color(0xFFFF7028),
+                    minimumSize: Size(width * 0.85, height*0.10),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(0),
+                  )
+                ),
                 onPressed: () {
                   Navigator.of(context)
                       .push(MaterialPageRoute(builder: (context) => Sinif9()));
@@ -40,6 +67,11 @@ class _MyAppState extends State<MyApp> {
                 child: Text("9.Sınıf"),
               ),
               ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  surfaceTintColor: Color(0xFFFF7028),
+                  primary: Color(0xFFFF7028),
+                    minimumSize: Size(width * 0.85, height*0.10)
+                ),
                 onPressed: () {
                   Navigator.of(context)
                       .push(MaterialPageRoute(builder: (context) => Sinif9()));
@@ -47,6 +79,11 @@ class _MyAppState extends State<MyApp> {
                 child: Text("10.Sınıf"),
               ),
               ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  surfaceTintColor: Color(0xFFFF7028),
+                  primary: Color(0xFFFF7028),
+                    minimumSize: Size(width * 0.85, height*0.10)
+                ),
                 onPressed: () {
                   Navigator.of(context)
                       .push(MaterialPageRoute(builder: (context) => Sinif9()));
@@ -54,6 +91,11 @@ class _MyAppState extends State<MyApp> {
                 child: Text("11.Sınıf"),
               ),
               ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  surfaceTintColor: Color(0xFFFF7028),
+                  primary: Color(0xFFFF7028),
+                    minimumSize: Size(width * 0.85, height*0.10)
+                ),
                 onPressed: () {
                   Navigator.of(context)
                       .push(MaterialPageRoute(builder: (context) => Sinif9()));
