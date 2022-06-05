@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:oek_lise/Pages/9.Sinif/cografya.dart';
 import 'package:oek_lise/Pages/9.Sinif/fizik.dart';
 import 'package:oek_lise/widgets/sidebar.dart';
 import 'matematik.dart';
@@ -51,7 +52,7 @@ class _Sinif9State extends State<Sinif9> {
               ElevatedButton(
                   onPressed: () {
                     Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context) => Tarih9()));
+                        MaterialPageRoute(builder: (context) => Cografya9()));
                   },
                   child: const Text("Coğrafya")),
               ElevatedButton(
