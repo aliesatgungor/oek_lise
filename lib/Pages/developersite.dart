@@ -1,27 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
-class Developer extends StatefulWidget {
 
+class Developer extends StatefulWidget {
   Developer({Key? key}) : super(key: key);
   @override
   _DeveloperState createState() => _DeveloperState();
 }
+
 class _DeveloperState extends State<Developer> {
   final GlobalKey webViewKey = GlobalKey();
 
   InAppWebViewController? webViewController;
   InAppWebViewGroupOptions options = InAppWebViewGroupOptions(
       crossPlatform: InAppWebViewOptions(
-
         useShouldOverrideUrlLoading: true,
         mediaPlaybackRequiresUserGesture: false,
       ),
       android: AndroidInAppWebViewOptions(
-
         useHybridComposition: true,
       ),
       ios: IOSInAppWebViewOptions(
-
         allowsInlineMediaPlayback: true,
       ));
 
@@ -32,14 +30,14 @@ class _DeveloperState extends State<Developer> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-
+    return SafeArea(
+        child: Scaffold(
       body: InAppWebView(
         key: webViewKey,
         initialUrlRequest:
-        URLRequest(url: Uri.parse("https://aliesatgungor.com/")),
+            URLRequest(url: Uri.parse("https://aliesatgungor.com/")),
         initialOptions: options,
       ),
-    );
+    ));
   }
 }

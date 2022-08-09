@@ -5,27 +5,24 @@ import 'dart:io';
 import 'package:oek_lise/main.dart';
 
 class Tarih10 extends StatefulWidget {
-
   Tarih10({Key? key}) : super(key: key);
   @override
   _Tarih10State createState() => _Tarih10State();
 }
+
 class _Tarih10State extends State<Tarih10> {
   final GlobalKey webViewKey = GlobalKey();
 
   InAppWebViewController? webViewController;
   InAppWebViewGroupOptions options = InAppWebViewGroupOptions(
       crossPlatform: InAppWebViewOptions(
-
         useShouldOverrideUrlLoading: true,
         mediaPlaybackRequiresUserGesture: false,
       ),
       android: AndroidInAppWebViewOptions(
-
         useHybridComposition: true,
       ),
       ios: IOSInAppWebViewOptions(
-
         allowsInlineMediaPlayback: true,
       ));
 
@@ -36,14 +33,15 @@ class _Tarih10State extends State<Tarih10> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-
+    return SafeArea(
+        child: Scaffold(
       body: InAppWebView(
         key: webViewKey,
-        initialUrlRequest:
-        URLRequest(url: Uri.parse("https://www.dersizleyin.com/kategori/lise/10-sinif/10-sinif-tarih/")),
+        initialUrlRequest: URLRequest(
+            url: Uri.parse(
+                "https://www.dersizleyin.com/kategori/lise/10-sinif/10-sinif-tarih/")),
         initialOptions: options,
       ),
-    );
+    ));
   }
 }

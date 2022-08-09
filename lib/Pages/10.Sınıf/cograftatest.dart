@@ -1,27 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
-class CografyaTest10 extends StatefulWidget {
 
+class CografyaTest10 extends StatefulWidget {
   CografyaTest10({Key? key}) : super(key: key);
   @override
   _CografyaTest10State createState() => _CografyaTest10State();
 }
+
 class _CografyaTest10State extends State<CografyaTest10> {
   final GlobalKey webViewKey = GlobalKey();
 
   InAppWebViewController? webViewController;
   InAppWebViewGroupOptions options = InAppWebViewGroupOptions(
       crossPlatform: InAppWebViewOptions(
-
         useShouldOverrideUrlLoading: true,
         mediaPlaybackRequiresUserGesture: false,
       ),
       android: AndroidInAppWebViewOptions(
-
         useHybridComposition: true,
       ),
       ios: IOSInAppWebViewOptions(
-
         allowsInlineMediaPlayback: true,
       ));
 
@@ -32,14 +30,15 @@ class _CografyaTest10State extends State<CografyaTest10> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-
+    return SafeArea(
+        child: Scaffold(
       body: InAppWebView(
         key: webViewKey,
-        initialUrlRequest:
-        URLRequest(url: Uri.parse("https://ogmmateryal.eba.gov.tr/soru-bankasi-kazanim/cografya?s=7&d=10&u=0&k=0")),
+        initialUrlRequest: URLRequest(
+            url: Uri.parse(
+                "https://ogmmateryal.eba.gov.tr/soru-bankasi-kazanim/cografya?s=7&d=10&u=0&k=0")),
         initialOptions: options,
       ),
-    );
+    ));
   }
 }
