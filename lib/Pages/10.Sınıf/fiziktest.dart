@@ -3,13 +3,13 @@ import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'dart:async';
 import 'dart:io';
 import 'package:oek_lise/main.dart';
-class FizikTest9 extends StatefulWidget {
+class FizikTest10 extends StatefulWidget {
 
-  FizikTest9({Key? key}) : super(key: key);
+  FizikTest10({Key? key}) : super(key: key);
   @override
-  _FizikTest9State createState() => _FizikTest9State();
+  _FizikTest10State createState() => _FizikTest10State();
 }
-class _FizikTest9State extends State<FizikTest9> {
+class _FizikTest10State extends State<FizikTest10> {
   final GlobalKey webViewKey = GlobalKey();
 
   InAppWebViewController? webViewController;
@@ -40,7 +40,7 @@ class _FizikTest9State extends State<FizikTest9> {
       body: InAppWebView(
         key: webViewKey,
         initialUrlRequest:
-        URLRequest(url: Uri.parse("https://ogmmateryal.eba.gov.tr/soru-bankasi-kazanim/fizik?s=6&d=32&u=0&k=0")),
+        URLRequest(url: Uri.parse("https://ogmmateryal.eba.gov.tr/soru-bankasi-kazanim/fizik?s=7&d=33&u=0&k=0")),
         initialOptions: options,
       ),
     );
