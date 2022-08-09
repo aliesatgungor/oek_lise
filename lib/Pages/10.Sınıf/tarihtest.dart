@@ -40,7 +40,7 @@ class _TarihTest9State extends State<TarihTest9> {
       body: InAppWebView(
         key: webViewKey,
         initialUrlRequest:
-        URLRequest(url: Uri.parse("https://ogmmateryal.eba.gov.tr/soru-bankasi-kazanim/tarih?s=6&d=55&u=0&k=0")),
+        URLRequest(url: Uri.parse("https://ogmmateryal.eba.gov.tr/soru-bankasi-kazanim/tarih?s=7&d=56&u=0&k=0")),
         initialOptions: options,
       ),
     );

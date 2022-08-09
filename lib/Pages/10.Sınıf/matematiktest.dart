@@ -3,13 +3,13 @@ import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'dart:async';
 import 'dart:io';
 import 'package:oek_lise/main.dart';
-class MatematikTest9 extends StatefulWidget {
+class MatematikTest10 extends StatefulWidget {
 
-  MatematikTest9({Key? key}) : super(key: key);
+  MatematikTest10({Key? key}) : super(key: key);
   @override
-  _MatematikTest9State createState() => _MatematikTest9State();
+  _MatematikTest10State createState() => _MatematikTest10State();
 }
-class _MatematikTest9State extends State<MatematikTest9> {
+class _MatematikTest10State extends State<MatematikTest10> {
   final GlobalKey webViewKey = GlobalKey();
 
   InAppWebViewController? webViewController;
@@ -40,7 +40,7 @@ class _MatematikTest9State extends State<MatematikTest9> {
       body: InAppWebView(
         key: webViewKey,
         initialUrlRequest:
-        URLRequest(url: Uri.parse("https://ogmmateryal.eba.gov.tr/soru-bankasi-kazanim/matematik?s=6&d=48&u=0&k=0")),
+        URLRequest(url: Uri.parse("https://ogmmateryal.eba.gov.tr/soru-bankasi-kazanim/matematik?s=7&d=49&u=0&k=0")),
         initialOptions: options,
       ),
     );

@@ -3,13 +3,13 @@ import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'dart:async';
 import 'dart:io';
 import 'package:oek_lise/main.dart';
-class KimyaTest9 extends StatefulWidget {
+class KimyaTest10 extends StatefulWidget {
 
-  KimyaTest9({Key? key}) : super(key: key);
+  KimyaTest10({Key? key}) : super(key: key);
   @override
-  _KimyaTest9State createState() => _KimyaTest9State();
+  _KimyaTest10State createState() => _KimyaTest10State();
 }
-class _KimyaTest9State extends State<KimyaTest9> {
+class _KimyaTest10State extends State<KimyaTest10> {
   final GlobalKey webViewKey = GlobalKey();
 
   InAppWebViewController? webViewController;
@@ -40,7 +40,7 @@ class _KimyaTest9State extends State<KimyaTest9> {
       body: InAppWebView(
         key: webViewKey,
         initialUrlRequest:
-        URLRequest(url: Uri.parse("https://ogmmateryal.eba.gov.tr/soru-bankasi-kazanim/kimya?s=6&d=44&u=0&k=0")),
+        URLRequest(url: Uri.parse("https://ogmmateryal.eba.gov.tr/soru-bankasi-kazanim/kimya?s=7&d=45&u=0&k=0")),
         initialOptions: options,
       ),
     );
