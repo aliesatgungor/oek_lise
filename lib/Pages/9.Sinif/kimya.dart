@@ -3,28 +3,26 @@ import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'dart:async';
 import 'dart:io';
 import 'package:oek_lise/main.dart';
-class Kimya9 extends StatefulWidget {
 
+class Kimya9 extends StatefulWidget {
   Kimya9({Key? key}) : super(key: key);
   @override
   _Kimya9State createState() => _Kimya9State();
 }
+
 class _Kimya9State extends State<Kimya9> {
   final GlobalKey webViewKey = GlobalKey();
 
   InAppWebViewController? webViewController;
   InAppWebViewGroupOptions options = InAppWebViewGroupOptions(
       crossPlatform: InAppWebViewOptions(
-
         useShouldOverrideUrlLoading: true,
         mediaPlaybackRequiresUserGesture: false,
       ),
       android: AndroidInAppWebViewOptions(
-
         useHybridComposition: true,
       ),
       ios: IOSInAppWebViewOptions(
-
         allowsInlineMediaPlayback: true,
       ));
 
@@ -35,14 +33,15 @@ class _Kimya9State extends State<Kimya9> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-
+    return SafeArea(
+        child: Scaffold(
       body: InAppWebView(
         key: webViewKey,
-        initialUrlRequest:
-        URLRequest(url: Uri.parse("https://www.dersizleyin.com/kategori/lise/9-sinif/kimya-9/")),
+        initialUrlRequest: URLRequest(
+            url: Uri.parse(
+                "https://www.dersizleyin.com/kategori/lise/9-sinif/kimya-9/")),
         initialOptions: options,
       ),
-    );
+    ));
   }
 }

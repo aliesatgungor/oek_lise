@@ -3,28 +3,26 @@ import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'dart:async';
 import 'dart:io';
 import 'package:oek_lise/main.dart';
-class Tarih9 extends StatefulWidget {
 
+class Tarih9 extends StatefulWidget {
   Tarih9({Key? key}) : super(key: key);
   @override
   _Tarih9State createState() => _Tarih9State();
 }
+
 class _Tarih9State extends State<Tarih9> {
   final GlobalKey webViewKey = GlobalKey();
 
   InAppWebViewController? webViewController;
   InAppWebViewGroupOptions options = InAppWebViewGroupOptions(
       crossPlatform: InAppWebViewOptions(
-
         useShouldOverrideUrlLoading: true,
         mediaPlaybackRequiresUserGesture: false,
       ),
       android: AndroidInAppWebViewOptions(
-
         useHybridComposition: true,
       ),
       ios: IOSInAppWebViewOptions(
-
         allowsInlineMediaPlayback: true,
       ));
 
@@ -35,14 +33,15 @@ class _Tarih9State extends State<Tarih9> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-
+    return SafeArea(
+        child: Scaffold(
       body: InAppWebView(
         key: webViewKey,
-        initialUrlRequest:
-        URLRequest(url: Uri.parse("https://www.dersizleyin.com/kategori/lise/9-sinif/9-sinif-tarih/")),
+        initialUrlRequest: URLRequest(
+            url: Uri.parse(
+                "https://www.dersizleyin.com/kategori/lise/9-sinif/9-sinif-tarih/")),
         initialOptions: options,
       ),
-    );
+    ));
   }
 }

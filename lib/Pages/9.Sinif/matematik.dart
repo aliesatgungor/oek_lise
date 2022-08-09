@@ -3,28 +3,26 @@ import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'dart:async';
 import 'dart:io';
 import 'package:oek_lise/main.dart';
-class Matematik9 extends StatefulWidget {
 
+class Matematik9 extends StatefulWidget {
   Matematik9({Key? key}) : super(key: key);
   @override
   _Matematik9State createState() => _Matematik9State();
 }
+
 class _Matematik9State extends State<Matematik9> {
   final GlobalKey webViewKey = GlobalKey();
 
   InAppWebViewController? webViewController;
   InAppWebViewGroupOptions options = InAppWebViewGroupOptions(
       crossPlatform: InAppWebViewOptions(
-
         useShouldOverrideUrlLoading: true,
         mediaPlaybackRequiresUserGesture: false,
       ),
       android: AndroidInAppWebViewOptions(
-
         useHybridComposition: true,
       ),
       ios: IOSInAppWebViewOptions(
-
         allowsInlineMediaPlayback: true,
       ));
 
@@ -35,14 +33,15 @@ class _Matematik9State extends State<Matematik9> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-
+    return SafeArea(
+        child: Scaffold(
       body: InAppWebView(
         key: webViewKey,
-        initialUrlRequest:
-        URLRequest(url: Uri.parse("https://www.dersizleyin.com/kategori/lise/9-sinif/matematik-9/")),
+        initialUrlRequest: URLRequest(
+            url: Uri.parse(
+                "https://www.dersizleyin.com/kategori/lise/9-sinif/matematik-9/")),
         initialOptions: options,
       ),
-    );
+    ));
   }
 }

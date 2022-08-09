@@ -1,27 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
-class BiyolojiTest9 extends StatefulWidget {
 
+class BiyolojiTest9 extends StatefulWidget {
   BiyolojiTest9({Key? key}) : super(key: key);
   @override
   _BiyolojiTest9State createState() => _BiyolojiTest9State();
 }
+
 class _BiyolojiTest9State extends State<BiyolojiTest9> {
   final GlobalKey webViewKey = GlobalKey();
 
   InAppWebViewController? webViewController;
   InAppWebViewGroupOptions options = InAppWebViewGroupOptions(
       crossPlatform: InAppWebViewOptions(
-
         useShouldOverrideUrlLoading: true,
         mediaPlaybackRequiresUserGesture: false,
       ),
       android: AndroidInAppWebViewOptions(
-
         useHybridComposition: true,
       ),
       ios: IOSInAppWebViewOptions(
-
         allowsInlineMediaPlayback: true,
       ));
 
@@ -32,14 +30,15 @@ class _BiyolojiTest9State extends State<BiyolojiTest9> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-
+    return SafeArea(
+        child: Scaffold(
       body: InAppWebView(
         key: webViewKey,
-        initialUrlRequest:
-        URLRequest(url: Uri.parse("https://ogmmateryal.eba.gov.tr/soru-bankasi-kazanim/biyoloji?s=6&d=5&u=0&k=0")),
+        initialUrlRequest: URLRequest(
+            url: Uri.parse(
+                "https://ogmmateryal.eba.gov.tr/soru-bankasi-kazanim/biyoloji?s=6&d=5&u=0&k=0")),
         initialOptions: options,
       ),
-    );
+    ));
   }
 }
