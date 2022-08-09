@@ -3,13 +3,13 @@ import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'dart:async';
 import 'dart:io';
 import 'package:oek_lise/main.dart';
-class TarihTest9 extends StatefulWidget {
+class TarihTest10 extends StatefulWidget {
 
-  TarihTest9({Key? key}) : super(key: key);
+  TarihTest10({Key? key}) : super(key: key);
   @override
-  _TarihTest9State createState() => _TarihTest9State();
+  _TarihTest10State createState() => _TarihTest10State();
 }
-class _TarihTest9State extends State<TarihTest9> {
+class _TarihTest10State extends State<TarihTest10> {
   final GlobalKey webViewKey = GlobalKey();
 
   InAppWebViewController? webViewController;

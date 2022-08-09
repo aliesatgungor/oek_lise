@@ -1,10 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:oek_lise/Pages/10.S%C4%B1n%C4%B1f/biyoloji.dart';
+import 'package:oek_lise/Pages/10.S%C4%B1n%C4%B1f/biyolojitest.dart';
+import 'package:oek_lise/Pages/10.S%C4%B1n%C4%B1f/cograftatest.dart';
+import 'package:oek_lise/Pages/10.S%C4%B1n%C4%B1f/cografya.dart';
 import 'package:oek_lise/Pages/10.S%C4%B1n%C4%B1f/fizik.dart';
+import 'package:oek_lise/Pages/10.S%C4%B1n%C4%B1f/fiziktest.dart';
 import 'package:oek_lise/Pages/10.S%C4%B1n%C4%B1f/kimya.dart';
+import 'package:oek_lise/Pages/10.S%C4%B1n%C4%B1f/kimyatest.dart';
 import 'package:oek_lise/Pages/10.S%C4%B1n%C4%B1f/matematik.dart';
+import 'package:oek_lise/Pages/10.S%C4%B1n%C4%B1f/matematiktest.dart';
 import 'package:oek_lise/Pages/10.S%C4%B1n%C4%B1f/tarih.dart';
+import 'package:oek_lise/Pages/10.S%C4%B1n%C4%B1f/tarihtest.dart';
+import 'package:oek_lise/Pages/9.Sinif/matematiktest.dart';
 import 'dart:ui';
 
 import '../../widgets/sidebar.dart';

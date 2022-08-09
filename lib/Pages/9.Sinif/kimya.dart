@@ -9,7 +9,7 @@ class Kimya9 extends StatefulWidget {
   @override
   _Kimya9State createState() => _Kimya9State();
 }
-class _Kimya10State extends State<Kimya9> {
+class _Kimya9State extends State<Kimya9> {
   final GlobalKey webViewKey = GlobalKey();
 
   InAppWebViewController? webViewController;
