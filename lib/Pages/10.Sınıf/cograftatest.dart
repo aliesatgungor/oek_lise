@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
-class CografyaTest9 extends StatefulWidget {
+class CografyaTest10 extends StatefulWidget {
 
-  CografyaTest9({Key? key}) : super(key: key);
+  CografyaTest10({Key? key}) : super(key: key);
   @override
-  _CografyaTest9State createState() => _CografyaTest9State();
+  _CografyaTest10State createState() => _CografyaTest10State();
 }
-class _CografyaTest9State extends State<CografyaTest9> {
+class _CografyaTest10State extends State<CografyaTest10> {
   final GlobalKey webViewKey = GlobalKey();
 
   InAppWebViewController? webViewController;

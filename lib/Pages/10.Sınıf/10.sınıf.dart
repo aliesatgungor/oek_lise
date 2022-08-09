@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
+import 'package:oek_lise/Pages/10.S%C4%B1n%C4%B1f/biyoloji.dart';
+import 'package:oek_lise/Pages/10.S%C4%B1n%C4%B1f/fizik.dart';
+import 'package:oek_lise/Pages/10.S%C4%B1n%C4%B1f/kimya.dart';
+import 'package:oek_lise/Pages/10.S%C4%B1n%C4%B1f/matematik.dart';
+import 'package:oek_lise/Pages/10.S%C4%B1n%C4%B1f/tarih.dart';
 import 'dart:ui';
 
 import '../../widgets/sidebar.dart';
@@ -18,7 +23,7 @@ class _Sinif10State extends State<Sinif10> {
     var width = MediaQuery.of(context).size.width;
     return Scaffold(
         appBar: AppBar(
-          title: const Text("9.Sınıf"),
+          title: const Text("10.Sınıf"),
           backgroundColor: Color(0xFFFF7028),
         ),
         drawer: const NavDrawer(),
@@ -38,7 +43,7 @@ class _Sinif10State extends State<Sinif10> {
                       ),
                       onPressed: () {
                         Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => Matematik9()));
+                            builder: (context) => Matematik10()));
                       },
                       child: const Text("Matematik")),
                   ElevatedButton(
@@ -49,7 +54,7 @@ class _Sinif10State extends State<Sinif10> {
                       ),
                       onPressed: () {
                         Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => MatematikTest9()));
+                            builder: (context) => MatematikTest10()));
                       },
                       child: const Text("Matematik Test"))
                 ],
@@ -65,7 +70,7 @@ class _Sinif10State extends State<Sinif10> {
                       ),
                       onPressed: () {
                         Navigator.of(context).push(
-                            MaterialPageRoute(builder: (context) => Kimya9()));
+                            MaterialPageRoute(builder: (context) => Kimya10()));
                       },
                       child: const Text("Kimya")),
                   ElevatedButton(
@@ -76,7 +81,7 @@ class _Sinif10State extends State<Sinif10> {
                       ),
                       onPressed: () {
                         Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => KimyaTest9()));
+                            builder: (context) => KimyaTest10()));
                       },
                       child: const Text("Kimya Test"))
                 ],
@@ -92,7 +97,7 @@ class _Sinif10State extends State<Sinif10> {
                       ),
                       onPressed: () {
                         Navigator.of(context).push(
-                            MaterialPageRoute(builder: (context) => Fizik9()));
+                            MaterialPageRoute(builder: (context) => Fizik10()));
                       },
                       child: const Text("Fizik")),
                   ElevatedButton(
@@ -103,7 +108,7 @@ class _Sinif10State extends State<Sinif10> {
                       ),
                       onPressed: () {
                         Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => FizikTest9()));
+                            builder: (context) => FizikTest10()));
                       },
                       child: const Text("Fizik Test"))
                 ],
@@ -119,7 +124,7 @@ class _Sinif10State extends State<Sinif10> {
                       ),
                       onPressed: () {
                         Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => Biyoloji9()));
+                            builder: (context) => Biyoloji10()));
                       },
                       child: const Text("Biyoloji")),
                   ElevatedButton(
@@ -130,7 +135,7 @@ class _Sinif10State extends State<Sinif10> {
                       ),
                       onPressed: () {
                         Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => BiyolojiTest9()));
+                            builder: (context) => BiyolojiTest10()));
                       },
                       child: const Text("Biyoloji Test"))
                 ],
@@ -146,7 +151,7 @@ class _Sinif10State extends State<Sinif10> {
                       ),
                       onPressed: () {
                         Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => Cografya9()));
+                            builder: (context) => Cografya10()));
                       },
                       child: const Text("Coğrafya")),
                   ElevatedButton(
@@ -157,7 +162,7 @@ class _Sinif10State extends State<Sinif10> {
                       ),
                       onPressed: () {
                         Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => CografyaTest9()));
+                            builder: (context) => CografyaTest10()));
                       },
                       child: const Text("Coğrafya Test"))
                 ],
@@ -173,7 +178,7 @@ class _Sinif10State extends State<Sinif10> {
                       ),
                       onPressed: () {
                         Navigator.of(context).push(
-                            MaterialPageRoute(builder: (context) => Tarih9()));
+                            MaterialPageRoute(builder: (context) => Tarih10()));
                       },
                       child: const Text("Tarih")),
                   ElevatedButton(
@@ -184,7 +189,7 @@ class _Sinif10State extends State<Sinif10> {
                       ),
                       onPressed: () {
                         Navigator.of(context).push(
-                            MaterialPageRoute(builder: (context) => TarihTest9()));
+                            MaterialPageRoute(builder: (context) => TarihTest10()));
                       },
                       child: const Text("Tarih Test"))
                 ],

@@ -3,13 +3,13 @@ import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'dart:async';
 import 'dart:io';
 import 'package:oek_lise/main.dart';
-class Kimya9 extends StatefulWidget {
+class Kimya10 extends StatefulWidget {
 
-  Kimya9({Key? key}) : super(key: key);
+  Kimya10({Key? key}) : super(key: key);
   @override
-  _Kimya9State createState() => _Kimya9State();
+  _Kimya10State createState() => _Kimya10State();
 }
-class _Kimya9State extends State<Kimya9> {
+class _Kimya10State extends State<Kimya10> {
   final GlobalKey webViewKey = GlobalKey();
 
   InAppWebViewController? webViewController;
@@ -40,7 +40,7 @@ class _Kimya9State extends State<Kimya9> {
       body: InAppWebView(
         key: webViewKey,
         initialUrlRequest:
-        URLRequest(url: Uri.parse("https://www.dersizleyin.com/kategori/lise/9-sinif/kimya-9/")),
+        URLRequest(url: Uri.parse("https://www.dersizleyin.com/kategori/lise/10-sinif/kimya-10/")),
         initialOptions: options,
       ),
     );

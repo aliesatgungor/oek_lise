@@ -40,7 +40,7 @@ class _Cografya9State extends State<Cografya9> {
       body: InAppWebView(
         key: webViewKey,
         initialUrlRequest:
-        URLRequest(url: Uri.parse("https://www.dersizleyin.com/kategori/lise/9-sinif/cografya-9/")),
+        URLRequest(url: Uri.parse("https://www.dersizleyin.com/kategori/lise/10-sinif/cografya-10/")),
         initialOptions: options,
       ),
     );
