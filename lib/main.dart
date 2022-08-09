@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
+import 'package:oek_lise/Pages/10.S%C4%B1n%C4%B1f/10.s%C4%B1n%C4%B1f.dart';
 import 'package:oek_lise/Pages/9.Sinif/9.sinif.dart';
 import 'package:oek_lise/widgets/sidebar.dart';
 import 'dart:async';
 import 'dart:io';
 
-import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -74,7 +74,7 @@ class _MyAppState extends State<MyApp> {
                 ),
                 onPressed: () {
                   Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (context) => Sinif9()));
+                      .push(MaterialPageRoute(builder: (context) => Sinif10()));
                 },
                 child: Text("10.Sınıf"),
               ),

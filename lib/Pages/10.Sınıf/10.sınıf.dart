@@ -1,19 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:oek_lise/Pages/9.Sinif/biyolojitest.dart';
-import 'package:oek_lise/Pages/9.Sinif/cograftatest.dart';
-import 'package:oek_lise/Pages/9.Sinif/cografya.dart';
-import 'package:oek_lise/Pages/9.Sinif/fizik.dart';
-import 'package:oek_lise/Pages/9.Sinif/fiziktest.dart';
-import 'package:oek_lise/Pages/9.Sinif/kimyatest.dart';
-import 'package:oek_lise/Pages/9.Sinif/matematiktest.dart';
-import 'package:oek_lise/Pages/9.Sinif/tarihtest.dart';
-import 'package:oek_lise/widgets/sidebar.dart';
-import 'matematik.dart';
-import 'kimya.dart';
-import 'biyoloji.dart';
-import 'tarih.dart';
+import 'package:flutter_inappwebview/flutter_inappwebview.dart';
+import 'dart:ui';
 
-class _Sinif9State extends State<Sinif9> {
+import '../../widgets/sidebar.dart';
+
+
+class Sinif10 extends StatefulWidget {
+  const Sinif10({Key? key}) : super(key: key);
+  @override
+  _Sinif10State createState() => _Sinif10State();
+}
+
+class _Sinif10State extends State<Sinif10> {
   @override
   Widget build(BuildContext context) {
     var height = MediaQuery.of(context).size.height;
@@ -34,9 +32,9 @@ class _Sinif9State extends State<Sinif9> {
                 children: [
                   ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        surfaceTintColor: Color(0xFFFF7028),
-                        primary: Color(0xFFFF7028),
-                        minimumSize: Size(width * 0.35, height * 0.06)
+                          surfaceTintColor: Color(0xFFFF7028),
+                          primary: Color(0xFFFF7028),
+                          minimumSize: Size(width * 0.35, height * 0.06)
                       ),
                       onPressed: () {
                         Navigator.of(context).push(MaterialPageRoute(
@@ -45,8 +43,8 @@ class _Sinif9State extends State<Sinif9> {
                       child: const Text("Matematik")),
                   ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        surfaceTintColor: Color(0xFFFF7028),
-                        primary: Color(0xFFFF7028),
+                          surfaceTintColor: Color(0xFFFF7028),
+                          primary: Color(0xFFFF7028),
                           minimumSize: Size(width * 0.35, height * 0.06)
                       ),
                       onPressed: () {
@@ -61,8 +59,8 @@ class _Sinif9State extends State<Sinif9> {
                 children: [
                   ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        surfaceTintColor: Color(0xFFFF7028),
-                        primary: Color(0xFFFF7028),
+                          surfaceTintColor: Color(0xFFFF7028),
+                          primary: Color(0xFFFF7028),
                           minimumSize: Size(width * 0.35, height * 0.06)
                       ),
                       onPressed: () {
@@ -72,8 +70,8 @@ class _Sinif9State extends State<Sinif9> {
                       child: const Text("Kimya")),
                   ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        surfaceTintColor: Color(0xFFFF7028),
-                        primary: Color(0xFFFF7028),
+                          surfaceTintColor: Color(0xFFFF7028),
+                          primary: Color(0xFFFF7028),
                           minimumSize: Size(width * 0.35, height * 0.06)
                       ),
                       onPressed: () {
@@ -88,8 +86,8 @@ class _Sinif9State extends State<Sinif9> {
                 children: [
                   ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        surfaceTintColor: Color(0xFFFF7028),
-                        primary: Color(0xFFFF7028),
+                          surfaceTintColor: Color(0xFFFF7028),
+                          primary: Color(0xFFFF7028),
                           minimumSize: Size(width * 0.35, height * 0.06)
                       ),
                       onPressed: () {
@@ -99,8 +97,8 @@ class _Sinif9State extends State<Sinif9> {
                       child: const Text("Fizik")),
                   ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        surfaceTintColor: Color(0xFFFF7028),
-                        primary: Color(0xFFFF7028),
+                          surfaceTintColor: Color(0xFFFF7028),
+                          primary: Color(0xFFFF7028),
                           minimumSize: Size(width * 0.35, height * 0.06)
                       ),
                       onPressed: () {
@@ -115,8 +113,8 @@ class _Sinif9State extends State<Sinif9> {
                 children: [
                   ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        surfaceTintColor: Color(0xFFFF7028),
-                        primary: Color(0xFFFF7028),
+                          surfaceTintColor: Color(0xFFFF7028),
+                          primary: Color(0xFFFF7028),
                           minimumSize: Size(width * 0.35, height * 0.06)
                       ),
                       onPressed: () {
@@ -126,8 +124,8 @@ class _Sinif9State extends State<Sinif9> {
                       child: const Text("Biyoloji")),
                   ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        surfaceTintColor: Color(0xFFFF7028),
-                        primary: Color(0xFFFF7028),
+                          surfaceTintColor: Color(0xFFFF7028),
+                          primary: Color(0xFFFF7028),
                           minimumSize: Size(width * 0.35, height * 0.06)
                       ),
                       onPressed: () {
@@ -142,8 +140,8 @@ class _Sinif9State extends State<Sinif9> {
                 children: [
                   ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        surfaceTintColor: Color(0xFFFF7028),
-                        primary: Color(0xFFFF7028),
+                          surfaceTintColor: Color(0xFFFF7028),
+                          primary: Color(0xFFFF7028),
                           minimumSize: Size(width * 0.35, height * 0.06)
                       ),
                       onPressed: () {
@@ -153,8 +151,8 @@ class _Sinif9State extends State<Sinif9> {
                       child: const Text("Coğrafya")),
                   ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        surfaceTintColor: Color(0xFFFF7028),
-                        primary: Color(0xFFFF7028),
+                          surfaceTintColor: Color(0xFFFF7028),
+                          primary: Color(0xFFFF7028),
                           minimumSize: Size(width * 0.35, height * 0.06)
                       ),
                       onPressed: () {
@@ -169,8 +167,8 @@ class _Sinif9State extends State<Sinif9> {
                 children: [
                   ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        surfaceTintColor: Color(0xFFFF7028),
-                        primary: Color(0xFFFF7028),
+                          surfaceTintColor: Color(0xFFFF7028),
+                          primary: Color(0xFFFF7028),
                           minimumSize: Size(width * 0.35, height * 0.06)
                       ),
                       onPressed: () {
@@ -180,8 +178,8 @@ class _Sinif9State extends State<Sinif9> {
                       child: const Text("Tarih")),
                   ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        surfaceTintColor: Color(0xFFFF7028),
-                        primary: Color(0xFFFF7028),
+                          surfaceTintColor: Color(0xFFFF7028),
+                          primary: Color(0xFFFF7028),
                           minimumSize: Size(width * 0.35, height * 0.06)
                       ),
                       onPressed: () {
@@ -197,8 +195,3 @@ class _Sinif9State extends State<Sinif9> {
   }
 }
 
-class Sinif9 extends StatefulWidget {
-  const Sinif9({Key? key}) : super(key: key);
-  @override
-  _Sinif9State createState() => _Sinif9State();
-}
