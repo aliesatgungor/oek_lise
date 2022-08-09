@@ -1,11 +1,10 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:oek_lise/Pages/10.S%C4%B1n%C4%B1f/10.s%C4%B1n%C4%B1f.dart';
 import 'package:oek_lise/Pages/9.Sinif/9.sinif.dart';
 import 'package:oek_lise/widgets/sidebar.dart';
 import 'dart:async';
 import 'dart:io';
-
+import 'package:flutter/material.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,7 +22,6 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-
   @override
   Widget build(BuildContext context) {
     var height = MediaQuery.of(context).size.height;
@@ -32,8 +30,8 @@ class _MyAppState extends State<MyApp> {
     return Scaffold(
         backgroundColor: Color(0xFF2f2f2f),
         appBar: AppBar(
-            title: Text("Online Eğitim Köprüsü Lise"),
-            backgroundColor: Color(0xFFFF7028),
+          title: Text("Online Eğitim Köprüsü Lise"),
+          backgroundColor: Color(0xFFFF7028),
         ),
         drawer: NavDrawer(),
         body: Center(
@@ -41,25 +39,19 @@ class _MyAppState extends State<MyApp> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Container(
-                height: height*0.40,
-                width: width*1,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: NetworkImage("https://lh6.googleusercontent.com/94UsaKS8oqiwlAAu0MGzucO_ITmhNRfKPFx-9coBwHxmqPZflgJOVTsHxxSfcLXp4Bk0ETMen6VxdzFTZgaRji6dlWSejCL-4lvlyZyLJqdbZPZG"),
-                    fit: BoxFit.fill
-                  ),
+                height: height * 0.40,
+                child: Image.network(
+                  'https://lh4.googleusercontent.com/FdEMaxdNs-UvqOWrTQZbJSJ4AZcUF87so1bVKAyzWabmmnueRhcZfdWhRu61u4V9E5p2346_x6EOdTKzOau3X01gZfYRt7U-hsvnCJR38d7Zfx0H1aPHGriUyjJ6ApDcTg=w1280',
                 ),
               ),
-
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  surfaceTintColor: Color(0xFFFF7028),
-                  primary: Color(0xFFFF7028),
-                    minimumSize: Size(width * 0.85, height*0.10),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(0),
-                  )
-                ),
+                    surfaceTintColor: Color(0xFFFF7028),
+                    primary: Color(0xFFFF7028),
+                    minimumSize: Size(width * 0.85, height * 0.10),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(0),
+                    )),
                 onPressed: () {
                   Navigator.of(context)
                       .push(MaterialPageRoute(builder: (context) => Sinif9()));
@@ -68,10 +60,9 @@ class _MyAppState extends State<MyApp> {
               ),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  surfaceTintColor: Color(0xFFFF7028),
-                  primary: Color(0xFFFF7028),
-                    minimumSize: Size(width * 0.85, height*0.10)
-                ),
+                    surfaceTintColor: Color(0xFFFF7028),
+                    primary: Color(0xFFFF7028),
+                    minimumSize: Size(width * 0.85, height * 0.10)),
                 onPressed: () {
                   Navigator.of(context)
                       .push(MaterialPageRoute(builder: (context) => Sinif10()));
@@ -80,10 +71,9 @@ class _MyAppState extends State<MyApp> {
               ),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  surfaceTintColor: Color(0xFFFF7028),
-                  primary: Color(0xFFFF7028),
-                    minimumSize: Size(width * 0.85, height*0.10)
-                ),
+                    surfaceTintColor: Color(0xFFFF7028),
+                    primary: Color(0xFFFF7028),
+                    minimumSize: Size(width * 0.85, height * 0.10)),
                 onPressed: () {
                   Navigator.of(context)
                       .push(MaterialPageRoute(builder: (context) => Sinif9()));
@@ -92,10 +82,9 @@ class _MyAppState extends State<MyApp> {
               ),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  surfaceTintColor: Color(0xFFFF7028),
-                  primary: Color(0xFFFF7028),
-                    minimumSize: Size(width * 0.85, height*0.10)
-                ),
+                    surfaceTintColor: Color(0xFFFF7028),
+                    primary: Color(0xFFFF7028),
+                    minimumSize: Size(width * 0.85, height * 0.10)),
                 onPressed: () {
                   Navigator.of(context)
                       .push(MaterialPageRoute(builder: (context) => Sinif9()));

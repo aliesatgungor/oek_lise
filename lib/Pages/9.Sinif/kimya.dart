@@ -33,8 +33,11 @@ class _Kimya9State extends State<Kimya9> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-        child: Scaffold(
+    return Scaffold(
+      appBar: PreferredSize(
+        child: Container(),
+        preferredSize: Size.fromHeight(0.0),
+      ),
       body: InAppWebView(
         key: webViewKey,
         initialUrlRequest: URLRequest(
@@ -42,6 +45,6 @@ class _Kimya9State extends State<Kimya9> {
                 "https://www.dersizleyin.com/kategori/lise/9-sinif/kimya-9/")),
         initialOptions: options,
       ),
-    ));
+    );
   }
 }
