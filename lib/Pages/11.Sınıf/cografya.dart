@@ -4,13 +4,13 @@ import 'dart:async';
 import 'dart:io';
 import 'package:oek_lise/main.dart';
 
-class Cografya10 extends StatefulWidget {
-  Cografya10({Key? key}) : super(key: key);
+class Cografya11 extends StatefulWidget {
+  Cografya11({Key? key}) : super(key: key);
   @override
-  _Cografya10State createState() => _Cografya10State();
+  _Cografya11State createState() => _Cografya11State();
 }
 
-class _Cografya10State extends State<Cografya10> {
+class _Cografya11State extends State<Cografya11> {
   final GlobalKey webViewKey = GlobalKey();
 
   InAppWebViewController? webViewController;
@@ -39,7 +39,7 @@ class _Cografya10State extends State<Cografya10> {
         key: webViewKey,
         initialUrlRequest: URLRequest(
             url: Uri.parse(
-                "https://www.dersizleyin.com/kategori/lise/10-sinif/cografya-10/")),
+                "https://www.dersizleyin.com/kategori/lise/11-sinif/cografya-11/")),
         initialOptions: options,
       ),
     ));
