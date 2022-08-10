@@ -39,11 +39,8 @@ class _MyAppState extends State<MyApp> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Container(
-                height: height * 0.40,
-                child: Image.network(
-                  'https://lh5.googleusercontent.com/HDeCxsf5rhK6HpPbfXQIUioPTjSQ0hX58pJHXm2DL2w4yMlaPax0uOZ-4boU8il7BRnzq50Y-ub8OZIX8-MKTL6uQ7QEQLUpQHMrmBXaR3B5iPndctxIoVTQPRm4dwuaiQ=w1280',
-                ),
-              ),
+                  height: height * 0.40,
+                  child: Image.asset("lib/umutkcbs.png")),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
                     surfaceTintColor: Color(0xFFFF7028),
