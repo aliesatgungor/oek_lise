@@ -4,13 +4,13 @@ import 'dart:async';
 import 'dart:io';
 import 'package:oek_lise/main.dart';
 
-class Kimya10 extends StatefulWidget {
-  Kimya10({Key? key}) : super(key: key);
+class Kimya11 extends StatefulWidget {
+  Kimya11({Key? key}) : super(key: key);
   @override
-  _Kimya10State createState() => _Kimya10State();
+  _Kimya11State createState() => _Kimya11State();
 }
 
-class _Kimya10State extends State<Kimya10> {
+class _Kimya11State extends State<Kimya11> {
   final GlobalKey webViewKey = GlobalKey();
 
   InAppWebViewController? webViewController;
@@ -39,7 +39,7 @@ class _Kimya10State extends State<Kimya10> {
         key: webViewKey,
         initialUrlRequest: URLRequest(
             url: Uri.parse(
-                "https://www.dersizleyin.com/kategori/lise/10-sinif/kimya-10/")),
+                "https://www.dersizleyin.com/kategori/lise/11-sinif/kimya-11/")),
         initialOptions: options,
       ),
     ));

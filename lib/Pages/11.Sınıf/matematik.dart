@@ -4,13 +4,13 @@ import 'dart:async';
 import 'dart:io';
 import 'package:oek_lise/main.dart';
 
-class Matematik10 extends StatefulWidget {
-  Matematik10({Key? key}) : super(key: key);
+class Matematik11 extends StatefulWidget {
+  Matematik11({Key? key}) : super(key: key);
   @override
-  _Matematik10State createState() => _Matematik10State();
+  _Matematik11State createState() => _Matematik11State();
 }
 
-class _Matematik10State extends State<Matematik10> {
+class _Matematik11State extends State<Matematik11> {
   final GlobalKey webViewKey = GlobalKey();
 
   InAppWebViewController? webViewController;
@@ -39,7 +39,7 @@ class _Matematik10State extends State<Matematik10> {
         key: webViewKey,
         initialUrlRequest: URLRequest(
             url: Uri.parse(
-                "https://www.dersizleyin.com/kategori/lise/10-sinif/matematik-10/")),
+                "https://www.dersizleyin.com/kategori/lise/11-sinif/matematik-11/")),
         initialOptions: options,
       ),
     ));

@@ -17,7 +17,6 @@ import 'dart:ui';
 
 import '../../widgets/sidebar.dart';
 
-
 class Sinif10 extends StatefulWidget {
   const Sinif10({Key? key}) : super(key: key);
   @override
@@ -31,7 +30,7 @@ class _Sinif10State extends State<Sinif10> {
     var width = MediaQuery.of(context).size.width;
     return Scaffold(
         appBar: AppBar(
-          title: const Text("10.Sınıf"),
+          title: const Text("11.Sınıf"),
           backgroundColor: Color(0xFFFF7028),
         ),
         drawer: const NavDrawer(),
@@ -47,8 +46,7 @@ class _Sinif10State extends State<Sinif10> {
                       style: ElevatedButton.styleFrom(
                           surfaceTintColor: Color(0xFFFF7028),
                           primary: Color(0xFFFF7028),
-                          minimumSize: Size(width * 0.35, height * 0.06)
-                      ),
+                          minimumSize: Size(width * 0.35, height * 0.06)),
                       onPressed: () {
                         Navigator.of(context).push(MaterialPageRoute(
                             builder: (context) => Matematik10()));
@@ -58,8 +56,7 @@ class _Sinif10State extends State<Sinif10> {
                       style: ElevatedButton.styleFrom(
                           surfaceTintColor: Color(0xFFFF7028),
                           primary: Color(0xFFFF7028),
-                          minimumSize: Size(width * 0.35, height * 0.06)
-                      ),
+                          minimumSize: Size(width * 0.35, height * 0.06)),
                       onPressed: () {
                         Navigator.of(context).push(MaterialPageRoute(
                             builder: (context) => MatematikTest10()));
@@ -74,8 +71,7 @@ class _Sinif10State extends State<Sinif10> {
                       style: ElevatedButton.styleFrom(
                           surfaceTintColor: Color(0xFFFF7028),
                           primary: Color(0xFFFF7028),
-                          minimumSize: Size(width * 0.35, height * 0.06)
-                      ),
+                          minimumSize: Size(width * 0.35, height * 0.06)),
                       onPressed: () {
                         Navigator.of(context).push(
                             MaterialPageRoute(builder: (context) => Kimya10()));
@@ -85,8 +81,7 @@ class _Sinif10State extends State<Sinif10> {
                       style: ElevatedButton.styleFrom(
                           surfaceTintColor: Color(0xFFFF7028),
                           primary: Color(0xFFFF7028),
-                          minimumSize: Size(width * 0.35, height * 0.06)
-                      ),
+                          minimumSize: Size(width * 0.35, height * 0.06)),
                       onPressed: () {
                         Navigator.of(context).push(MaterialPageRoute(
                             builder: (context) => KimyaTest10()));
@@ -101,8 +96,7 @@ class _Sinif10State extends State<Sinif10> {
                       style: ElevatedButton.styleFrom(
                           surfaceTintColor: Color(0xFFFF7028),
                           primary: Color(0xFFFF7028),
-                          minimumSize: Size(width * 0.35, height * 0.06)
-                      ),
+                          minimumSize: Size(width * 0.35, height * 0.06)),
                       onPressed: () {
                         Navigator.of(context).push(
                             MaterialPageRoute(builder: (context) => Fizik10()));
@@ -112,8 +106,7 @@ class _Sinif10State extends State<Sinif10> {
                       style: ElevatedButton.styleFrom(
                           surfaceTintColor: Color(0xFFFF7028),
                           primary: Color(0xFFFF7028),
-                          minimumSize: Size(width * 0.35, height * 0.06)
-                      ),
+                          minimumSize: Size(width * 0.35, height * 0.06)),
                       onPressed: () {
                         Navigator.of(context).push(MaterialPageRoute(
                             builder: (context) => FizikTest10()));
@@ -128,8 +121,7 @@ class _Sinif10State extends State<Sinif10> {
                       style: ElevatedButton.styleFrom(
                           surfaceTintColor: Color(0xFFFF7028),
                           primary: Color(0xFFFF7028),
-                          minimumSize: Size(width * 0.35, height * 0.06)
-                      ),
+                          minimumSize: Size(width * 0.35, height * 0.06)),
                       onPressed: () {
                         Navigator.of(context).push(MaterialPageRoute(
                             builder: (context) => Biyoloji10()));
@@ -139,8 +131,7 @@ class _Sinif10State extends State<Sinif10> {
                       style: ElevatedButton.styleFrom(
                           surfaceTintColor: Color(0xFFFF7028),
                           primary: Color(0xFFFF7028),
-                          minimumSize: Size(width * 0.35, height * 0.06)
-                      ),
+                          minimumSize: Size(width * 0.35, height * 0.06)),
                       onPressed: () {
                         Navigator.of(context).push(MaterialPageRoute(
                             builder: (context) => BiyolojiTest10()));
@@ -155,8 +146,7 @@ class _Sinif10State extends State<Sinif10> {
                       style: ElevatedButton.styleFrom(
                           surfaceTintColor: Color(0xFFFF7028),
                           primary: Color(0xFFFF7028),
-                          minimumSize: Size(width * 0.35, height * 0.06)
-                      ),
+                          minimumSize: Size(width * 0.35, height * 0.06)),
                       onPressed: () {
                         Navigator.of(context).push(MaterialPageRoute(
                             builder: (context) => Cografya10()));
@@ -166,8 +156,7 @@ class _Sinif10State extends State<Sinif10> {
                       style: ElevatedButton.styleFrom(
                           surfaceTintColor: Color(0xFFFF7028),
                           primary: Color(0xFFFF7028),
-                          minimumSize: Size(width * 0.35, height * 0.06)
-                      ),
+                          minimumSize: Size(width * 0.35, height * 0.06)),
                       onPressed: () {
                         Navigator.of(context).push(MaterialPageRoute(
                             builder: (context) => CografyaTest10()));
@@ -182,8 +171,7 @@ class _Sinif10State extends State<Sinif10> {
                       style: ElevatedButton.styleFrom(
                           surfaceTintColor: Color(0xFFFF7028),
                           primary: Color(0xFFFF7028),
-                          minimumSize: Size(width * 0.35, height * 0.06)
-                      ),
+                          minimumSize: Size(width * 0.35, height * 0.06)),
                       onPressed: () {
                         Navigator.of(context).push(
                             MaterialPageRoute(builder: (context) => Tarih10()));
@@ -193,11 +181,10 @@ class _Sinif10State extends State<Sinif10> {
                       style: ElevatedButton.styleFrom(
                           surfaceTintColor: Color(0xFFFF7028),
                           primary: Color(0xFFFF7028),
-                          minimumSize: Size(width * 0.35, height * 0.06)
-                      ),
+                          minimumSize: Size(width * 0.35, height * 0.06)),
                       onPressed: () {
-                        Navigator.of(context).push(
-                            MaterialPageRoute(builder: (context) => TarihTest10()));
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => TarihTest10()));
                       },
                       child: const Text("Tarih Test"))
                 ],
@@ -207,4 +194,3 @@ class _Sinif10State extends State<Sinif10> {
         ));
   }
 }
-

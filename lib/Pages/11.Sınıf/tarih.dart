@@ -4,13 +4,13 @@ import 'dart:async';
 import 'dart:io';
 import 'package:oek_lise/main.dart';
 
-class Tarih10 extends StatefulWidget {
-  Tarih10({Key? key}) : super(key: key);
+class Tarih11 extends StatefulWidget {
+  Tarih11({Key? key}) : super(key: key);
   @override
-  _Tarih10State createState() => _Tarih10State();
+  _Tarih11State createState() => _Tarih11State();
 }
 
-class _Tarih10State extends State<Tarih10> {
+class _Tarih11State extends State<Tarih11> {
   final GlobalKey webViewKey = GlobalKey();
 
   InAppWebViewController? webViewController;

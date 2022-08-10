@@ -4,13 +4,13 @@ import 'dart:async';
 import 'dart:io';
 import 'package:oek_lise/main.dart';
 
-class Fizik10 extends StatefulWidget {
-  Fizik10({Key? key}) : super(key: key);
+class Fizik11 extends StatefulWidget {
+  Fizik11({Key? key}) : super(key: key);
   @override
-  _Fizik10State createState() => _Fizik10State();
+  _Fizik11State createState() => _Fizik11State();
 }
 
-class _Fizik10State extends State<Fizik10> {
+class _Fizik11State extends State<Fizik11> {
   final GlobalKey webViewKey = GlobalKey();
 
   InAppWebViewController? webViewController;
@@ -39,7 +39,7 @@ class _Fizik10State extends State<Fizik10> {
         key: webViewKey,
         initialUrlRequest: URLRequest(
             url: Uri.parse(
-                "https://www.dersizleyin.com/kategori/lise/10-sinif/fizik-10/")),
+                "https://www.dersizleyin.com/kategori/lise/11-sinif/fizik-11/")),
         initialOptions: options,
       ),
     ));
