@@ -4,13 +4,13 @@ import 'dart:async';
 import 'dart:io';
 import 'package:oek_lise/main.dart';
 
-class KimyaTest10 extends StatefulWidget {
-  KimyaTest10({Key? key}) : super(key: key);
+class KimyaTest11 extends StatefulWidget {
+  KimyaTest11({Key? key}) : super(key: key);
   @override
-  _KimyaTest10State createState() => _KimyaTest10State();
+  _KimyaTest11State createState() => _KimyaTest11State();
 }
 
-class _KimyaTest10State extends State<KimyaTest10> {
+class _KimyaTest11State extends State<KimyaTest11> {
   final GlobalKey webViewKey = GlobalKey();
 
   InAppWebViewController? webViewController;
@@ -39,7 +39,7 @@ class _KimyaTest10State extends State<KimyaTest10> {
         key: webViewKey,
         initialUrlRequest: URLRequest(
             url: Uri.parse(
-                "https://ogmmateryal.eba.gov.tr/soru-bankasi-kazanim/kimya?s=7&d=45&u=0&k=0")),
+                "https://ogmmateryal.eba.gov.tr/soru-bankasi-kazanim/kimya?s=8&d=46&u=0&k=0")),
         initialOptions: options,
       ),
     ));

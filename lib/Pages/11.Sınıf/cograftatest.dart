@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 
-class CografyaTest10 extends StatefulWidget {
-  CografyaTest10({Key? key}) : super(key: key);
+class CografyaTest11 extends StatefulWidget {
+  CografyaTest11({Key? key}) : super(key: key);
   @override
-  _CografyaTest10State createState() => _CografyaTest10State();
+  _CografyaTest11State createState() => _CografyaTest11State();
 }
 
-class _CografyaTest10State extends State<CografyaTest10> {
+class _CografyaTest11State extends State<CografyaTest11> {
   final GlobalKey webViewKey = GlobalKey();
 
   InAppWebViewController? webViewController;
@@ -36,7 +36,7 @@ class _CografyaTest10State extends State<CografyaTest10> {
         key: webViewKey,
         initialUrlRequest: URLRequest(
             url: Uri.parse(
-                "https://ogmmateryal.eba.gov.tr/soru-bankasi-kazanim/cografya?s=7&d=10&u=0&k=0")),
+                "https://ogmmateryal.eba.gov.tr/soru-bankasi-kazanim/cografya?s=8&d=11&u=0&k=0")),
         initialOptions: options,
       ),
     ));

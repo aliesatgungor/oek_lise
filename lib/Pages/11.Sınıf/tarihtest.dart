@@ -4,13 +4,13 @@ import 'dart:async';
 import 'dart:io';
 import 'package:oek_lise/main.dart';
 
-class TarihTest10 extends StatefulWidget {
-  TarihTest10({Key? key}) : super(key: key);
+class TarihTest11 extends StatefulWidget {
+  TarihTest11({Key? key}) : super(key: key);
   @override
-  _TarihTest10State createState() => _TarihTest10State();
+  _TarihTest11State createState() => _TarihTest11State();
 }
 
-class _TarihTest10State extends State<TarihTest10> {
+class _TarihTest11State extends State<TarihTest11> {
   final GlobalKey webViewKey = GlobalKey();
 
   InAppWebViewController? webViewController;
@@ -39,7 +39,7 @@ class _TarihTest10State extends State<TarihTest10> {
         key: webViewKey,
         initialUrlRequest: URLRequest(
             url: Uri.parse(
-                "https://ogmmateryal.eba.gov.tr/soru-bankasi-kazanim/tarih?s=7&d=56&u=0&k=0")),
+                "https://ogmmateryal.eba.gov.tr/soru-bankasi-kazanim/tarih?s=8&d=57&u=0&k=0")),
         initialOptions: options,
       ),
     ));

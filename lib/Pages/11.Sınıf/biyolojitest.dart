@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 
-class BiyolojiTest10 extends StatefulWidget {
-  BiyolojiTest10({Key? key}) : super(key: key);
+class BiyolojiTest11 extends StatefulWidget {
+  BiyolojiTest11({Key? key}) : super(key: key);
   @override
-  _BiyolojiTest10State createState() => _BiyolojiTest10State();
+  _BiyolojiTest11State createState() => _BiyolojiTest11State();
 }
 
-class _BiyolojiTest10State extends State<BiyolojiTest10> {
+class _BiyolojiTest11State extends State<BiyolojiTest11> {
   final GlobalKey webViewKey = GlobalKey();
 
   InAppWebViewController? webViewController;
@@ -36,7 +36,7 @@ class _BiyolojiTest10State extends State<BiyolojiTest10> {
         key: webViewKey,
         initialUrlRequest: URLRequest(
             url: Uri.parse(
-                "https://ogmmateryal.eba.gov.tr/soru-bankasi-kazanim/biyoloji?s=7&d=0&u=0&k=0")),
+                "https://ogmmateryal.eba.gov.tr/soru-bankasi-kazanim/biyoloji?s=8&d=7&u=0&k=0")),
         initialOptions: options,
       ),
     ));

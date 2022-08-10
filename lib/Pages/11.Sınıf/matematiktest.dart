@@ -4,13 +4,13 @@ import 'dart:async';
 import 'dart:io';
 import 'package:oek_lise/main.dart';
 
-class MatematikTest10 extends StatefulWidget {
-  MatematikTest10({Key? key}) : super(key: key);
+class MatematikTest11 extends StatefulWidget {
+  MatematikTest11({Key? key}) : super(key: key);
   @override
-  _MatematikTest10State createState() => _MatematikTest10State();
+  _MatematikTest11State createState() => _MatematikTest11State();
 }
 
-class _MatematikTest10State extends State<MatematikTest10> {
+class _MatematikTest11State extends State<MatematikTest11> {
   final GlobalKey webViewKey = GlobalKey();
 
   InAppWebViewController? webViewController;
@@ -39,7 +39,7 @@ class _MatematikTest10State extends State<MatematikTest10> {
         key: webViewKey,
         initialUrlRequest: URLRequest(
             url: Uri.parse(
-                "https://ogmmateryal.eba.gov.tr/soru-bankasi-kazanim/matematik?s=7&d=49&u=0&k=0")),
+                "https://ogmmateryal.eba.gov.tr/soru-bankasi-kazanim/matematik?s=8&d=50&u=0&k=0")),
         initialOptions: options,
       ),
     ));
