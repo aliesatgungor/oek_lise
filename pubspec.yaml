@@ -60,4 +60,5 @@ flutter:
 
   
   assets:
-    - "lib/umutkcbs.png"
+    
+    - "lib/komutan.png"

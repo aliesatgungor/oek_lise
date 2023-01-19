@@ -39,8 +39,7 @@ class _MyAppState extends State<MyApp> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Container(
-                  height: height * 0.40,
-                  child: Image.asset("lib/umutkcbs.png")),
+                  height: height * 0.40, child: Image.asset("lib/komutan.png")),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
                     surfaceTintColor: Color(0xFFFF7028),
