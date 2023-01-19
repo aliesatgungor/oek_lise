@@ -39,7 +39,7 @@ class _MatematikTest10State extends State<MatematikTest10> {
         key: webViewKey,
         initialUrlRequest: URLRequest(
             url: Uri.parse(
-                "https://ogmmateryal.eba.gov.tr/soru-bankasi-kazanim/matematik?s=7&d=49&u=0&k=0")),
+                "https://ogmmateryal.eba.gov.tr/soru-bankasi-kazanim/matematik?s=9&d=51&u=0&k=0")),
         initialOptions: options,
       ),
     ));

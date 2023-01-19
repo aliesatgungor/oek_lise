@@ -17,13 +17,13 @@ import 'dart:ui';
 
 import '../../widgets/sidebar.dart';
 
-class Sinif10 extends StatefulWidget {
-  const Sinif10({Key? key}) : super(key: key);
+class Sinif12 extends StatefulWidget {
+  const Sinif12({Key? key}) : super(key: key);
   @override
-  _Sinif10State createState() => _Sinif10State();
+  _Sinif12State createState() => _Sinif12State();
 }
 
-class _Sinif10State extends State<Sinif10> {
+class _Sinif12State extends State<Sinif12> {
   @override
   Widget build(BuildContext context) {
     var height = MediaQuery.of(context).size.height;

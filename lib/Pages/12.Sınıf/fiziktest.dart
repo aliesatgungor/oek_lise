@@ -39,7 +39,7 @@ class _FizikTest10State extends State<FizikTest10> {
         key: webViewKey,
         initialUrlRequest: URLRequest(
             url: Uri.parse(
-                "https://ogmmateryal.eba.gov.tr/soru-bankasi-kazanim/fizik?s=7&d=33&u=0&k=0")),
+                "https://ogmmateryal.eba.gov.tr/soru-bankasi-kazanim/fizik?s=9&d=35&u=0&k=0")),
         initialOptions: options,
       ),
     ));

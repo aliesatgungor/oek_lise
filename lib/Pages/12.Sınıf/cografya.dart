@@ -39,7 +39,7 @@ class _Cografya10State extends State<Cografya10> {
         key: webViewKey,
         initialUrlRequest: URLRequest(
             url: Uri.parse(
-                "https://www.dersizleyin.com/kategori/lise/10-sinif/cografya-10/")),
+                "https://www.dersizleyin.com/kategori/lise/12-sinif/cografya-12/")),
         initialOptions: options,
       ),
     ));

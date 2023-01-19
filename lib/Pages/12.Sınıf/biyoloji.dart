@@ -36,7 +36,7 @@ class _Biyoloji10State extends State<Biyoloji10> {
         key: webViewKey,
         initialUrlRequest: URLRequest(
             url: Uri.parse(
-                "https://www.dersizleyin.com/kategori/lise/10-sinif/biyoloji-10/")),
+                "https://www.dersizleyin.com/kategori/lise/12-sinif/biyoloji-12/")),
         initialOptions: options,
       ),
     ));

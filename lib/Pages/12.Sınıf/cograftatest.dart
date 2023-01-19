@@ -36,7 +36,7 @@ class _CografyaTest10State extends State<CografyaTest10> {
         key: webViewKey,
         initialUrlRequest: URLRequest(
             url: Uri.parse(
-                "https://ogmmateryal.eba.gov.tr/soru-bankasi-kazanim/cografya?s=7&d=10&u=0&k=0")),
+                "https://ogmmateryal.eba.gov.tr/soru-bankasi-kazanim/cografya?s=9&d=12&u=0&k=0")),
         initialOptions: options,
       ),
     ));

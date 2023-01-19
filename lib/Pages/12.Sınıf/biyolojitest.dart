@@ -36,7 +36,7 @@ class _BiyolojiTest10State extends State<BiyolojiTest10> {
         key: webViewKey,
         initialUrlRequest: URLRequest(
             url: Uri.parse(
-                "https://ogmmateryal.eba.gov.tr/soru-bankasi-kazanim/biyoloji?s=7&d=0&u=0&k=0")),
+                "https://ogmmateryal.eba.gov.tr/soru-bankasi-kazanim/biyoloji?s=9&d=8&u=0&k=0")),
         initialOptions: options,
       ),
     ));

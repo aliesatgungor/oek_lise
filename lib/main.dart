@@ -1,5 +1,7 @@
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:oek_lise/Pages/10.S%C4%B1n%C4%B1f/10.s%C4%B1n%C4%B1f.dart';
+import 'package:oek_lise/Pages/11.S%C4%B1n%C4%B1f/11.S%C4%B1n%C4%B1f.dart';
+import 'package:oek_lise/Pages/12.S%C4%B1n%C4%B1f/12.s%C4%B1n%C4%B1f.dart';
 import 'package:oek_lise/Pages/9.Sinif/9.sinif.dart';
 import 'package:oek_lise/widgets/sidebar.dart';
 import 'dart:async';
@@ -39,7 +41,8 @@ class _MyAppState extends State<MyApp> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Container(
-                  height: height * 0.40, child: Image.asset("lib/komutan.png")),
+                  height: height * 0.40,
+                  child: Image.asset("lib/Goat_Esat.png")),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
                     surfaceTintColor: Color(0xFFFF7028),
@@ -72,7 +75,7 @@ class _MyAppState extends State<MyApp> {
                     minimumSize: Size(width * 0.85, height * 0.10)),
                 onPressed: () {
                   Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (context) => Sinif9()));
+                      .push(MaterialPageRoute(builder: (context) => Sinif11()));
                 },
                 child: Text("11.Sınıf"),
               ),
@@ -83,7 +86,7 @@ class _MyAppState extends State<MyApp> {
                     minimumSize: Size(width * 0.85, height * 0.10)),
                 onPressed: () {
                   Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (context) => Sinif9()));
+                      .push(MaterialPageRoute(builder: (context) => Sinif12()));
                 },
                 child: Text("12.Sınıf"),
               )

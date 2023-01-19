@@ -39,7 +39,7 @@ class _Matematik10State extends State<Matematik10> {
         key: webViewKey,
         initialUrlRequest: URLRequest(
             url: Uri.parse(
-                "https://www.dersizleyin.com/kategori/lise/10-sinif/matematik-10/")),
+                "https://www.dersizleyin.com/kategori/lise/12-sinif/matematik-12/")),
         initialOptions: options,
       ),
     ));

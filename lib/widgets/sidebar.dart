@@ -16,11 +16,8 @@ class NavDrawer extends StatelessWidget {
         children: <Widget>[
           const DrawerHeader(
             decoration: BoxDecoration(
-                color: Color(0xffff7028),
-                image: DecorationImage(
-                    fit: BoxFit.fill,
-                    image: NetworkImage(
-                        "https://i.ytimg.com/vi/LEL5Kb8tz3Y/hqdefault.jpg"))),
+              color: Color(0xffff7028),
+            ),
             child: Center(
               child: Text(
                 'Ana Menü',

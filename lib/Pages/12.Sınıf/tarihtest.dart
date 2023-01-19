@@ -39,7 +39,7 @@ class _TarihTest10State extends State<TarihTest10> {
         key: webViewKey,
         initialUrlRequest: URLRequest(
             url: Uri.parse(
-                "https://ogmmateryal.eba.gov.tr/soru-bankasi-kazanim/tarih?s=7&d=56&u=0&k=0")),
+                "https://ogmmateryal.eba.gov.tr/soru-bankasi-kazanim/inkilap-tarihi?s=9&d=63&u=0&k=0")),
         initialOptions: options,
       ),
     ));

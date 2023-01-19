@@ -39,7 +39,7 @@ class _Kimya10State extends State<Kimya10> {
         key: webViewKey,
         initialUrlRequest: URLRequest(
             url: Uri.parse(
-                "https://www.dersizleyin.com/kategori/lise/10-sinif/kimya-10/")),
+                "https://www.dersizleyin.com/kategori/lise/12-sinif/kimya-12/")),
         initialOptions: options,
       ),
     ));

@@ -39,7 +39,7 @@ class _KimyaTest10State extends State<KimyaTest10> {
         key: webViewKey,
         initialUrlRequest: URLRequest(
             url: Uri.parse(
-                "https://ogmmateryal.eba.gov.tr/soru-bankasi-kazanim/kimya?s=7&d=45&u=0&k=0")),
+                "https://ogmmateryal.eba.gov.tr/soru-bankasi-kazanim/kimya?s=9&d=47&u=0&k=0")),
         initialOptions: options,
       ),
     ));
