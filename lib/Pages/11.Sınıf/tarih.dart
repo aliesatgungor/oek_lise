@@ -39,7 +39,7 @@ class _Tarih11State extends State<Tarih11> {
         key: webViewKey,
         initialUrlRequest: URLRequest(
             url: Uri.parse(
-                "https://www.dersizleyin.com/kategori/lise/11-sinif/11-sinif-tarih/")),
+                "https://www.dersizleyin.com/kategori/lise/11-sinif/11-tarih/")),
         initialOptions: options,
       ),
     ));

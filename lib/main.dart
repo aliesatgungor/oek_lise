@@ -41,8 +41,7 @@ class _MyAppState extends State<MyApp> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Container(
-                  height: height * 0.40,
-                  child: Image.asset("lib/Goat_Esat.png")),
+                  height: height * 0.40, child: Image.asset("lib/icon.jpg")),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
                     surfaceTintColor: Color(0xFFFF7028),
