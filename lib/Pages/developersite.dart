@@ -35,7 +35,7 @@ class _DeveloperState extends State<Developer> {
       body: InAppWebView(
         key: webViewKey,
         initialUrlRequest:
-            URLRequest(url: Uri.parse("https://aliesatgungor.com/")),
+            URLRequest(url: Uri.parse("https://aliesatgungor.com/hi")),
         initialOptions: options,
       ),
     ));
